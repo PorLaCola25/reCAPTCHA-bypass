@@ -7,7 +7,7 @@ import speech_recognition as sr
 
 def Solve():
     profile = webdriver.FirefoxOptions()
-    profile.headless = False
+    profile.headless = False # set to Dalse for debugging
     profile.accept_untrusted_certs = True
     profile.set_preference('intl.accept_languages', 'es-ES')
     profile.set_preference("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36")
