@@ -101,3 +101,6 @@ def SolveAudioChallange(driver):
     except FileNotFoundError:
         print("Invalid audio challange")
         return False
+    except Exception:
+        print("Unknown error while resolving to text")
+        return False
