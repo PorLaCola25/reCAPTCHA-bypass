@@ -9,4 +9,4 @@ from solve import Solve
 Solve(driver)
 ```
 
-Please make sure you are in the daefault content of the page and not inside any iframes .Additionally, make sure that you call set_preference('intl.accept_languages', 'es-ES') in your driver options when initializing it.
+Please make sure you are in the daefault content of the page and not inside any iframes when calling the Solve() function.Additionally, make sure that you call set_preference('intl.accept_languages', 'es-ES') in your driver options when initializing it.
