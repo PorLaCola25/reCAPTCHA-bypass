@@ -22,8 +22,8 @@ def Test():
     submit = driver.find_element_by_id("recaptcha-demo-submit")
     driver.execute_script("arguments[0].click();", submit)
     sleep(randint(1,5))
-    print("Printing page source:")
-    print(driver.page_source)
+    print("Printing response message:")
+    print(driver.find_element_by_class_name("recaptcha-success").text)
     print("Closing browser...")
     driver.close()
 
